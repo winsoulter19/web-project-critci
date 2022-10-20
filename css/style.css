@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Montserrat-Bold',sans-serif;
+    src: url('../fonts/Montserrat-Bold.ttf') format("ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium',sans-serif;
+    src: url('../fonts/Montserrat-Medium.ttf') format("ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular',sans-serif;
+    src: url('../fonts/Montserrat-Regular.ttf') format("ttf");
+    font-weight: 500;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background: url('/img/main-bg.png') center no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 1rem 0px;
+    margin-bottom: 100px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: wheat;
+}
+
+.nav-item {
+    margin-right: 25px;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform:capitalize;
+    color: white;
+
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: #6d6b6b;
+}
+
+.nav-item.active-line {
+    position: relative;
+}
+
+.nav-item.active-line::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: "";
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+}
+
+.nav-item:last-child {
+    margin-right: 0px;
+}
+
+.content {
+    max-width: 560px;
+}
+
+.content-subtitle {
+    font-family: 'Montserrat-Medium',sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.content-title {
+    margin-bottom: 35px;
+    font-family: 'Montserrat-Bold',sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.content-text {
+    margin-bottom: 35px;
+}
+
+.text {
+    font-family: inherit, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #fff;
+
+    background-color: #30366d;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.4s linear;
+}
+
+.btn:hover {
+    background-color: #3f4366;
+}
