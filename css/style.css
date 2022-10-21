@@ -483,6 +483,10 @@ body {
         font-size: 1.8rem;
     }
 
+    .footer {
+        position: static;
+    }
+
 }
 
 @media (max-width: 375px) {
