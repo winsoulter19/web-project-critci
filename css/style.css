@@ -42,7 +42,7 @@ body {
 
 .header {
     padding: 1rem 0px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .header-inner {
@@ -97,6 +97,11 @@ body {
 
 .content {
     max-width: 560px;
+    padding: 1rem;
+}
+
+.content-header {
+    margin-bottom: 35px;
 }
 
 .content-subtitle {
@@ -107,7 +112,6 @@ body {
 }
 
 .content-title {
-    margin-bottom: 35px;
     font-family: 'Montserrat-Bold',sans-serif;
     font-size: 2.6rem;
     font-weight: 500;
@@ -148,9 +152,9 @@ body {
 }
 
 .footer{
-    width: 100%;
     position: absolute;
-    bottom: 45px;
+    width: 100%;
+    bottom: 15px;
     left: 0;
 }
 
@@ -183,7 +187,6 @@ body {
     content: "";
 
     background-color: #fff;
-
 }
 
 .contacts-link:last-child::after {
@@ -214,7 +217,7 @@ body {
 }
 
 .author{
-    height: 80%;
+    height: 85%;
     position: absolute;
     bottom: 0;
     right: 0;
