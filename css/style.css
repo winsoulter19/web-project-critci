@@ -29,9 +29,10 @@ body {
 
 .page {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url('/img/main-bg.png') center no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .container {
@@ -64,7 +65,7 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    text-transform:capitalize;
+    text-transform: capitalize;
     color: white;
 
     transition: color 0.3s linear;
@@ -109,7 +110,7 @@ body {
     margin-bottom: 35px;
     font-family: 'Montserrat-Bold',sans-serif;
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.2;
 }
 
@@ -118,10 +119,10 @@ body {
 }
 
 .text {
-    font-family: inherit, sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -144,4 +145,77 @@ body {
 
 .btn:hover {
     background-color: #3f4366;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+}
+
+.contacts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+.contacts-link {
+    position: relative;
+    margin-right: 2rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts-link:first-child:before {
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-right: 2rem;
+
+    position: absolute;
+    bottom: 5px;
+    right: 100%;
+    content: "";
+
+    background-color: #fff;
+
+}
+
+.contacts-link:last-child::after {
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-left: 2rem;
+
+    position: absolute;
+    bottom: 5px;
+    left: 100%;
+    content: "";
+
+    background-color: #fff;
+
+} 
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts-link:last-child {
+    margin-right: 0px;
+}
+
+.contacts-icon {
+    margin-right: 0.5rem;
+}
+
+.author{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
